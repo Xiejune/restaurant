@@ -1,0 +1,540 @@
+/* 清除和設定預設 */
+html,
+body {
+  height: 100%;
+  font-family: 'Permanent Marker', '微軟正黑體', cursive;
+  /* font-family: 'Dancing Script', cursive; */
+  /* font-family: 'Mochiy Pop One', sans-serif; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* 主題顏色 */
+:root {
+  --bsColor-white: #ffffff;
+  --bsColor-black: #000000;
+  --bsColor-brown: #795548;
+  --bsColor-brown-lighten: #a18875;
+  --bsColor-brown-lighten2: #efebe9;
+  --bsColor-brown-darken: #3e2723;
+  --bsColor-brown-darken2: #4e342e;
+}
+
+body {
+  background: var(--bsColor-black);
+}
+
+/* 導覽列: logo */
+/* 文字 */
+#nav .navbar-brand {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  color: var(--bsColor-brown);
+}
+/* 圖片 */
+#nav .navbar-brand img {
+  /* 旋轉 */
+  transform: rotate(-15deg);
+}
+
+/* 導覽列: 清單 */
+#navbarMenu {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 60vw;
+  height: calc(100vh - 77.2px);
+  max-width: 350px;
+  background: #fff;
+  padding: 0.5rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 清單項目 */
+/* 上下邊界 */
+#navbarMenu .nav-item {
+  padding: 0.8rem 0;
+}
+/* 邊框 */
+#navbarMenu .nav-item:nth-of-type(1) {
+  border-top: 2px dashed #ddd;
+}
+#navbarMenu .nav-item {
+  border-bottom: 2px dashed #ddd;
+}
+/* 連結: 原始和 hover 樣式 */
+.navbar-light #navbarMenu .navbar-nav .nav-link {
+  color: var(--bsColor-brown);
+}
+.navbar-light #navbarMenu .navbar-nav .nav-link:hover {
+  color: var(--bsColor-brown);
+  filter: brightness(150%);
+}
+/* 除了首頁之外的其他頁面清單 active 樣式 */
+.navbar-light #navbarMenu .navbar-nav .active {
+  background: var(--bsColor-brown-lighten);
+}
+.navbar-light #navbarMenu .navbar-nav .active a {
+  color: #ddd;
+}
+.navbar-light #navbarMenu .navbar-nav .active .nav-link:hover {
+  color: #ddd;
+}
+
+/* pc 尺寸: #footer 在清單裡 */
+#footer1 {
+  width: 100%;
+  padding: 0 2rem;
+}
+#footer1 a {
+  color: var(--bsColor-brown);
+}
+#footer1 a:hover {
+  color: rgba(121, 85, 72, 0.55);
+}
+#footer1 p {
+  color: var(--bsColor-brown-darken);
+}
+
+/* 手機/平板尺寸: #footer 在螢幕底端 */
+#footer2 a {
+  color: var(--bsColor-white);
+}
+#footer2 a:hover {
+  color: var(--bsColor-white);
+  filter: brightness(80%);
+}
+#footer2 p {
+  color: var(--bsColor-white);
+  filter: brightness(80%);
+}
+
+/* 回頂端列 */
+.tophome {
+  color: var(--bsColor-brown);
+  right: 0;
+  left: auto;
+}
+.tophome:hover {
+  color: var(--bsColor-brown);
+  filter: brightness(80%);
+}
+
+/* 主體: 輪播圖 */
+#bg {
+  /* 在手機/平板尺寸, 上方有導覽列 */
+  margin-top: 75px;
+  overflow-x: hidden;
+}
+/* 輪播圖容器大小 */
+#bg #swiper-bg {
+  width: 100%;
+  height: 550px;
+}
+/* 遮罩 */
+#bg #swiper-bg::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  pointer-events: none;
+}
+/* 輪播圖的圖片 */
+#bg #swiper-bg img {
+  object-fit: cover;
+  object-position: center;
+}
+/* 輪播圖的分頁指示器 */
+#bg .swiper-pagination {
+  z-index: 101;
+}
+#bg .swiper-pagination-bullet {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(250, 250, 250, 0.5);
+  margin-right: 0.5rem;
+}
+#bg .swiper-pagination-bullet-active {
+  color: #fff;
+  background: var(--bsColor-brown);
+}
+
+/* 標題文字 */
+#bg .text {
+  z-index: 101;
+  font-family: 'Mochiy Pop One', sans-serif;
+}
+.w-new {
+  width: 60%;
+}
+
+/* 經典介紹 */
+#introduce {
+  /* 離上、下區塊一些距離 */
+  padding-top: 35px;
+  padding-bottom: 100px;
+  background: var(--bsColor-brown-lighten2);
+  overflow-x: hidden;
+}
+
+#introduce .container,
+#about .container {
+  padding: 0 3rem;
+}
+
+/* 標題 */
+#introduce .container > h1 {
+  color: var(--bsColor-brown-darken);
+}
+
+/* 卡片邊框顏色 */
+#introduce .border {
+  border-color: var(--bsColor-brown-lighten) !important;
+}
+
+#introduce .card {
+  overflow: hidden;
+}
+
+/* 卡片標題 */
+#introduce .card-title {
+  color: var(--bsColor-brown);
+}
+
+/* 卡片按鈕 */
+#introduce .card .btn {
+  color: var(--bsColor-white);
+  background-color: var(--bsColor-brown-lighten);
+  display: none;
+}
+
+/* 當滑鼠移到該卡片時, 要呈現的樣式(按鈕/圖片) */
+#introduce .card:hover .btn {
+  top: 50%;
+  display: block;
+}
+#introduce .card:hover img {
+  filter: brightness(50%);
+}
+
+/* 關於我們 */
+#about {
+  padding-top: 35px;
+  background: var(--bsColor-brown-darken);
+  overflow-x: hidden;
+}
+
+#about .container {
+  position: relative;
+}
+
+/* 圖片裡的文字: logo */
+#about .text-about1 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  color: var(--bsColor-brown);
+}
+/* 圖片裡的圖片: logo */
+#about .text-about1 img {
+  transform: rotate(-15deg);
+}
+
+/* 文字說明 */
+#about .text-about2 {
+  text-indent: 2em;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* 最新消息/菜單 樣式設定 */
+#bg-all {
+  margin-top: 77.5px;
+}
+
+#bg-all img {
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#bg-all .breadcrumb .breadcrumb-item::before {
+  color: var(--bsColor-white);
+}
+
+/* 最新消息主體 */
+#content-news {
+  padding-top: 35px;
+  font-family: '微軟正黑體';
+  font-weight: bolder;
+  overflow-x: hidden;
+}
+
+#content-news .new-img {
+  object-fit: cover;
+  object-position: left center;
+}
+
+#content-news .nav-link {
+  cursor: pointer;
+}
+
+#content-news .card-content2 .nav-link:hover {
+  color: var(--bsColor-brown);
+}
+
+.w-85 {
+  width: 85%;
+}
+
+/* 分頁 */
+#pagina {
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+}
+/* 觸發連結 */
+#pagina .page-item.active .page-link {
+  background: var(--bsColor-brown);
+  border-color: var(--bsColor-brown);
+}
+#pagina .page-link:hover {
+  color: var(--bsColor-brown);
+}
+#pagina .page-link:focus {
+  box-shadow: none;
+}
+
+/* 文字顏色 */
+.text-coffee {
+  color: var(--bsColor-brown);
+}
+
+/* 菜單樣式設定 */
+#bg-all .bg-menu {
+  object-fit: cover;
+  object-position: 90% 10%;
+}
+
+/* 菜單主體 */
+#content-menu {
+  padding-top: 35px;
+  font-family: '微軟正黑體';
+  font-weight: bolder;
+  overflow-x: hidden;
+}
+
+#content-menu .new-img {
+  object-fit: cover;
+  object-position: center;
+}
+
+#content-menu .card-sm {
+  cursor: pointer;
+  border-color: var(--bsColor-brown-darken2) !important;
+}
+
+#content-menu .card-sm .active {
+  background: var(--bsColor-brown-lighten);
+  color: var(--bsColor-white);
+}
+
+#content-menu .card-sm:hover .card-header {
+  background: var(--bsColor-brown-lighten);
+  color: var(--bsColor-white);
+}
+
+/* 聯絡我們樣式設定 */
+#bg-all .bg-conect {
+  object-fit: cover;
+  object-position: top right;
+}
+
+/* 聯絡我們主體 */
+#content-conect {
+  padding-top: 35px;
+  font-family: '微軟正黑體';
+  font-weight: bolder;
+  overflow-x: hidden;
+}
+
+#content-conect form .btn {
+  background: var(--bsColor-brown);
+  color: var(--bsColor-white);
+}
+
+/* 平板尺寸 */
+@media (min-width: 768px) {
+  /* 主體: 輪播圖 */
+  /* 輪播圖容器大小 */
+  #bg #swiper-bg {
+    height: 650px;
+  }
+  /* 標題文字 */
+  .fs-md-new1 {
+    font-size: calc(2.5rem + 20%) !important;
+  }
+
+  .fs-md-new2 {
+    font-size: calc(2rem + 20%) !important;
+  }
+
+  /* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* 最新消息/菜單 樣式設定 */
+  #bg-all img {
+    height: 550px;
+  }
+
+  #introduce .container,
+  #about .container {
+    padding: 0 1rem;
+  }
+}
+
+/* pc 尺寸 */
+@media (min-width: 1200px) {
+  /* 整個導覽列變為直向, 側邊攔 */
+  #nav {
+    width: 350px;
+    height: 100%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  #nav .container-fluid {
+    height: 100%;
+  }
+  /* 將定位移除的概念 */
+  #navbarMenu {
+    position: static;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  /* 主體: 輪播圖 */
+  /* 導覽列變為側邊攔, 所以位置和大小要考慮到 #nav */
+  #bg {
+    margin-left: 350px;
+    margin-top: 0;
+    width: calc(100% - 350px);
+  }
+  /* 輪播圖容器大小 */
+  #bg #swiper-bg {
+    height: 750px;
+  }
+  /* 標題文字 */
+  .fs-xl-new1 {
+    font-size: calc(2.5rem + 70%) !important;
+  }
+  .fs-xl-new2 {
+    font-size: calc(2rem + 70%) !important;
+  }
+
+  /* 經典介紹 */
+  /* 受到導覽列變為側邊攔影響 */
+  #introduce {
+    margin-left: 350px;
+    width: calc(100% - 350px);
+  }
+
+  /* 關於我們 */
+  /* 受到導覽列變為側邊攔影響 */
+  #about {
+    margin-left: 350px;
+    width: calc(100% - 350px);
+  }
+
+  #introduce .container,
+  #about .container {
+    padding: 0 6rem;
+  }
+
+  /* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* 最新消息/菜單 樣式設定 */
+  /* 受到導覽列變為側邊攔影響 */
+  #bg-all {
+    margin-left: 350px;
+    margin-top: 0;
+    width: calc(100% - 350px);
+  }
+
+  #bg-all img {
+    height: 650px;
+  }
+
+  /* 最新消息主體 */
+  #content-news {
+    margin-left: 350px;
+    margin-top: 0;
+    width: calc(100% - 350px);
+  }
+
+  /* 分頁 */
+  #pagina {
+    margin-left: 350px;
+  }
+
+  /* 菜單主體 */
+  #content-menu {
+    margin-left: 350px;
+    margin-top: 0;
+    width: calc(100% - 350px);
+  }
+
+  /* 聯絡我們主體 */
+  #content-conect {
+    margin-left: 350px;
+    margin-top: 0;
+    width: calc(100% - 350px);
+  }
+}
+
+/* 特例樣式 */
+@media (min-width: 576px) {
+  /* 主體: 輪播圖, 標題文字大小 */
+  .fs-sm-new1 {
+    font-size: calc(2.5rem + 10%) !important;
+  }
+  .fs-sm-new2 {
+    font-size: calc(2rem + 10%) !important;
+  }
+}
+
+@media (min-width: 992px) {
+  /* 經典介紹, 卡片標題字體大小 */
+  #introduce .card-title {
+    font-size: 1.8rem;
+  }
+
+  /* 關於我們離下方 #footer 區塊一些距離 */
+  #about {
+    padding-bottom: 50px;
+  }
+
+  /* 最新消息/菜單樣式設定 */
+  @media (min-width: 1400px) {
+    #content-news .container {
+      height: 430px;
+    }
+  }
+}

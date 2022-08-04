@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- AOS 的 css -->
+  <link rel="stylesheet" href="./css/aos.css">
+  <!-- bootstrap css 程式 -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="./icons/bootstrap-icons.css">
+  <!-- google font 字型 -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+  <!-- 自訂樣式 -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>contact us</title>
+</head>
+<body>
+  <!-- 導覽列: 手機/平板尺寸: 清單折疊起來, pc 尺寸: 清單展開 -->
+  <!-- 導覽列 -->
+  <nav id="nav" class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
+    <!-- 容器 -->
+    <div class="container-fluid d-xl-flex flex-xl-column justify-content-xl-center">
+      <!-- logo 品牌 -->
+      <a class="navbar-brand fs-1 flex-xl-grow-1 d-xl-flex align-items-xl-end" href="./index.html"><img src="./images/cup-of-drink.png" width="40" class="pb-2 me-2">Coffee shop</a>
+      <!-- 漢堡按鈕 -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 內容 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+      <div class="offcanvas offcanvas-start flex-column" id="navbarMenu">
+        <!-- 關閉按鈕 -->
+        <button type="button" class="btn-close text-reset ms-auto d-xl-none" data-bs-dismiss="offcanvas"></button>
+        <ul class="navbar-nav my-5 d-flex flex-column">
+          <li class="nav-item">
+            <a class="nav-link ps-3" href="./index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ps-3" href="./news.html">NEWS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ps-3" href="./menu.html">MENU</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link ps-3" href="./conect.html">CONTACT US</a>
+          </li>
+        </ul>
+        <div id="footer1" class="d-none d-xl-block mt-5 flex-grow-1">
+          <div class="row flex-column">
+            <div class="col fs-2">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-line"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+            <div class="col mt-4 fw-bolder">
+              <p>
+                &copy; 2022 by Jun<br>
+                <span style="font-size: 14px;">此為切版練習，圖片為原網站所有</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 封頁 -->
+  <div id="bg-all">
+    <div class="container-fluid position-relative">
+      <img src="./images/conect.png" class="d-block w-100 bg-conect">
+      <!-- 麵包屑 -->
+      <nav class="position-absolute start-50 top-50 translate-middle fs-1">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html" class="link-light">Home</a></li>
+          <li class="breadcrumb-item text-light">CONTACT US</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <div id="content-conect">
+    <div class="container p-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
+      <h1 class="text-center text-white">聯絡我們</h1>
+      <br>
+      <form class="row g-3">
+        <div class="col-md-6 form-floating">
+          <input type="text" class="form-control ps-3" id="inputname" placeholder="name">
+          <label for="inputname" class="ps-4">姓名</label>
+        </div>
+        <div class="col-md-6 form-floating">
+          <input type="tel" class="form-control" id="inputtel" placeholder="0900000000">
+          <label for="inputtel" class="ps-4">電話</label>
+        </div>
+        <div class="col-12 form-floating">
+          <input type="email" class="form-control" id="inputemail" placeholder="name@example.com">
+          <label for="inputemail" class="ps-4">電子郵件</label>
+        </div>
+        <div class="col-12 form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+          <label for="floatingTextarea2" class="ps-4">訊息</label>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn fw-bolder px-5 py-2 fs-4">送出</button>
+        </div>
+      </form>
+      <p class="mt-4 fs-6 fw-bolder text-white">
+        週一至週五 AM09:00～PM17:00 為您做回覆；<br>
+        若於下班時間提出問題則需至次上班時間方能為您提供服務。<br>
+      </p>
+    </div>
+  </div>
+
+  <div id="footer2" class="mt-1 py-4 d-xl-none">
+    <div class="container">
+      <div class="row flex-column flex-md-row">
+        <div class="col fs-1 d-flex justify-content-center align-items-center">
+          <a href="#" class="me-4"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="me-4"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="me-4"><i class="bi bi-line"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+        <div class="col mt-4 d-flex justify-content-center align-items-center fw-bolder">
+          <p>
+            &copy; 2022 by Jun<br>
+            <span style="font-size: 14px;">此為切版練習，圖片為原網站所有</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#" class="tophome fixed-bottom mx-4 my-2"><i class="bi bi-arrow-up-circle-fill fs-1"></i></a>
+  
+  <!-- bootstrap js 程式 -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <!-- AOS 的主程式 js -->
+  <script src="./js/aos.js"></script>
+  <script>
+    // 啟動 AOS
+    AOS.init()
+  </script>
+</body>
+</html>

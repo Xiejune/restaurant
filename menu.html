@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- AOS 的 css -->
+  <link rel="stylesheet" href="./css/aos.css">
+  <!-- bootstrap css 程式 -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="./icons/bootstrap-icons.css">
+  <!-- google font 字型 -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+  <!-- 自訂樣式 -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>menu</title>
+</head>
+<body>
+  <!-- 導覽列: 手機/平板尺寸: 清單折疊起來, pc 尺寸: 清單展開 -->
+  <!-- 導覽列 -->
+  <nav id="nav" class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
+    <!-- 容器 -->
+    <div class="container-fluid d-xl-flex flex-xl-column justify-content-xl-center">
+      <!-- logo 品牌 -->
+      <a class="navbar-brand fs-1 flex-xl-grow-1 d-xl-flex align-items-xl-end" href="./index.html"><img src="./images/cup-of-drink.png" width="40" class="pb-2 me-2">Coffee shop</a>
+      <!-- 漢堡按鈕 -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 內容 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+      <div class="offcanvas offcanvas-start flex-column" id="navbarMenu">
+        <!-- 關閉按鈕 -->
+        <button type="button" class="btn-close text-reset ms-auto d-xl-none" data-bs-dismiss="offcanvas"></button>
+        <ul class="navbar-nav my-5 d-flex flex-column">
+          <li class="nav-item">
+            <a class="nav-link ps-3" href="./index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ps-3" href="./news.html">NEWS</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link ps-3" href="./menu.html">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ps-3" href="./conect.html">CONTACT US</a>
+          </li>
+        </ul>
+        <div id="footer1" class="d-none d-xl-block mt-5 flex-grow-1">
+          <div class="row flex-column">
+            <div class="col fs-2">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-line"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+            <div class="col mt-4 fw-bolder">
+              <p>
+                &copy; 2022 by Jun<br>
+                <span style="font-size: 14px;">此為切版練習，圖片為原網站所有</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 封頁 -->
+  <div id="bg-all">
+    <div class="container-fluid position-relative">
+      <img src="./images/menu.png" class="d-block w-100 bg-menu">
+      <!-- 麵包屑 -->
+      <nav class="position-absolute start-50 top-50 translate-middle fs-1">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html" class="link-light">Home</a></li>
+          <li class="breadcrumb-item text-light">menu</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <div id="content-menu" class="d-flex flex-column gap-xxl-5">
+    <h1 class="text-center text-white" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">精選菜單</h1>
+    <div id="coffee" class="container d-flex justify-content-center" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" data-aos-offset="0" data-aos-once="true">
+      <div class="card mb-5 w-85 h-100">
+        <div class="row g-0 h-100 align-items-center">
+          <div class="col-xxl-4 h-100 p-5 p-xxl-3">
+            <!-- 圖片 -->
+            <img src="https://cdn.pixabay.com/photo/2021/01/11/02/56/cup-5906901_960_720.jpg" class="img-coffee w-100 ratio ratio-4x3 new-img rounded rounded-3">
+          </div>
+          <div class="col-xxl-8 h-100">
+            <div class="card-body">
+              <!-- 標題 -->
+              <h5 class="card-title fw-bolder fs-4">精品咖啡</h5>
+              <hr>
+              <p class="card-text text-coffee row"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="food" class="container d-flex justify-content-center" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000" data-aos-offset="0" data-aos-once="true">
+      <div class="card mb-5 w-85 h-100">
+        <div class="row g-0 h-100 align-items-center">
+          <div class="col-xxl-4 h-100 p-5 p-xxl-3">
+            <!-- 圖片 -->
+            <img src="https://cdn.pixabay.com/photo/2015/04/20/21/05/breakfast-732231_1280.jpg" class="img-food w-100 ratio ratio-4x3 new-img rounded rounded-3">
+          </div>
+          <div class="col-xxl-8 h-100">
+            <div class="card-body">
+              <!-- 標題 -->
+              <h5 class="card-title fw-bolder fs-4">精選輕食</h5>
+              <hr>
+              <p class="card-text text-food row"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="drink" class="container d-flex justify-content-center" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" data-aos-offset="0" data-aos-once="true">
+      <div class="card mb-5 w-85 h-100">
+        <div class="row g-0 h-100 align-items-center">
+          <div class="col-xxl-4 h-100 p-5 p-xxl-3">
+            <!-- 圖片 -->
+            <img src="https://cdn.pixabay.com/photo/2017/08/26/19/12/matcha-green-tea-2683990_960_720.jpg" class="img-drink w-100 ratio ratio-4x3 new-img rounded rounded-3">
+          </div>
+          <div class="col-xxl-8 h-100">
+            <div class="card-body">
+              <!-- 標題 -->
+              <h5 class="card-title fw-bolder fs-4">嚴選茶飲</h5>
+              <hr>
+              <p class="card-text text-drink row"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer2" class="mt-1 py-4 d-xl-none">
+    <div class="container">
+      <div class="row flex-column flex-md-row">
+        <div class="col fs-1 d-flex justify-content-center align-items-center">
+          <a href="#" class="me-4"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="me-4"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="me-4"><i class="bi bi-line"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+        <div class="col mt-4 d-flex justify-content-center align-items-center fw-bolder">
+          <p>
+            &copy; 2022 by Jun<br>
+            <span style="font-size: 14px;">此為切版練習，圖片為原網站所有</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#" class="tophome fixed-bottom mx-4 my-2"><i class="bi bi-arrow-up-circle-fill fs-1"></i></a>
+  
+  <!-- bootstrap js 程式 -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <!-- AOS 的主程式 js -->
+  <script src="./js/aos.js"></script>
+  <script src="./js/text.js"></script>
+  <script>
+    const textCoffee = document.querySelector('#content-menu .text-coffee')
+    const textFood = document.querySelector('#content-menu .text-food')
+    const textDrink = document.querySelector('#content-menu .text-drink')
+    const Coffee_img = document.querySelector('#content-menu .img-coffee')
+    const Food_img = document.querySelector('#content-menu .img-food')
+    const Drink_img = document.querySelector('#content-menu .img-drink')
+    
+    
+
+    for (let i=0; i<menu_coffee.length; i++) {
+      textCoffee.insertAdjacentHTML('beforeend', `
+        <div class="col-6">
+          <div class="card card-sm border-dark mb-3">
+            <div class="card-header">${menu_coffee[i].title}</div>
+            <div class="card-body text-dark p-1">
+              ${menu_coffee[i].content}
+            </div>
+          </div>
+        </div>
+      `)
+      const coffeeTitle = document.querySelector('#content-menu .text-coffee .card-header')
+      if (i == 0) {
+        coffeeTitle.classList.add('active')
+      }
+    }
+
+    for (let i=0; i<menu_food.length; i++) {
+      textFood.insertAdjacentHTML('beforeend', `
+        <div class="col-6">
+          <div class="card card-sm border-dark mb-3">
+            <div class="card-header">${menu_food[i].title}</div>
+            <div class="card-body text-dark p-1">
+              ${menu_food[i].content}
+            </div>
+          </div>
+        </div>
+      `)
+      const foodTitle = document.querySelector('#content-menu .text-food .card-header')
+      if (i == 0) {
+        foodTitle.classList.add('active')
+      }
+    }
+
+    for (let i=0; i<menu_drink.length; i++) {
+      textDrink.insertAdjacentHTML('beforeend', `
+        <div class="col-6">
+          <div class="card card-sm border-dark mb-3">
+            <div class="card-header">${menu_drink[i].title}</div>
+            <div class="card-body text-dark p-1">
+              ${menu_drink[i].content}
+            </div>
+          </div>
+        </div>
+      `)
+      const drinkTitle = document.querySelector('#content-menu .text-drink .card-header')
+      if (i == 0) {
+        drinkTitle.classList.add('active')
+      }
+    }
+
+    const textCoffee_card = document.querySelectorAll('#content-menu .text-coffee .card-sm')
+    const textFood_card = document.querySelectorAll('#content-menu .text-food .card-sm')
+    const textDrink_card = document.querySelectorAll('#content-menu .text-drink .card-sm')
+    const CoffeeTitle = document.querySelectorAll('#content-menu .text-coffee .card-sm .card-header')
+    const FoodTitle = document.querySelectorAll('#content-menu .text-food .card-sm .card-header')
+    const DrinkTitle = document.querySelectorAll('#content-menu .text-drink .card-sm .card-header')
+
+    for (const i in textCoffee_card) {
+      textCoffee_card[i].onclick = () => {
+        Coffee_img.src = `${menu_coffee[i].img}`
+        for (const title of CoffeeTitle) {
+          title.classList.remove('active')
+        }
+        CoffeeTitle[i].classList.add('active')
+      }
+    }
+
+    for (const i in textFood_card) {
+      textFood_card[i].onclick = () => {
+        Food_img.src = `${menu_food[i].img}`
+        for (const title of FoodTitle) {
+          title.classList.remove('active')
+        }
+        FoodTitle[i].classList.add('active')
+      }
+    }
+
+    for (const i in textDrink_card) {
+      textDrink_card[i].onclick = () => {
+        Drink_img.src = `${menu_drink[i].img}`
+        for (const title of DrinkTitle) {
+          title.classList.remove('active')
+        }
+        DrinkTitle[i].classList.add('active')
+      }
+    }
+
+    // 啟動 AOS
+    AOS.init()
+  </script>
+</body>
+</html>

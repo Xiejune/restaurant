@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 設定 swiper css -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- AOS 的 css -->
+  <link rel="stylesheet" href="./css/aos.css">
+  <!-- bootstrap css 程式 -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="./icons/bootstrap-icons.css">
+  <!-- google font 字型 -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+  <!-- 自訂樣式 -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Coffee shop</title>
+</head>
+<body>
+  <!-- 導覽列: 手機/平板尺寸: 清單折疊起來, pc 尺寸: 清單展開 -->
+  <!-- 導覽列 -->
+  <nav id="nav" class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
+    <!-- 容器 -->
+    <div class="container-fluid d-xl-flex flex-xl-column justify-content-xl-center">
+      <!-- logo 品牌 -->
+      <a class="navbar-brand fs-1 flex-xl-grow-1 d-xl-flex align-items-xl-end" href="./index.html"><img src="./images/cup-of-drink.png" width="40" class="pb-2 me-2">Coffee shop</a>
+      <!-- 漢堡按鈕 -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 內容 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+      <div class="offcanvas offcanvas-start flex-column" id="navbarMenu">
+        <!-- 關閉按鈕 -->
+        <button type="button" class="btn-close text-reset ms-auto d-xl-none" data-bs-dismiss="offcanvas"></button>
+        <ul class="navbar-nav my-5 d-flex flex-column">
+          <li class="nav-item">
+            <a class="nav-link ps-3" href="./news.html">NEWS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ps-3" href="./menu.html">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ps-3" href="./conect.html">CONTACT US</a>
+          </li>
+        </ul>
+        <!-- 在清單裡的 #footer1 -->
+        <div id="footer1" class="d-none d-xl-block mt-5 flex-grow-1">
+          <div class="row flex-column">
+            <div class="col fs-2">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-line"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+            <div class="col mt-4 fw-bolder">
+              <p>
+                &copy; 2022 by Jun<br>
+                <span style="font-size: 14px;">此為切版練習，圖片為原網站所有</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 主體: 輪播圖 -->
+  <div id="bg">
+    <div class="container-fluid position-relative">
+      <div id="swiper-bg" class="swiper position-relative">
+        <!-- 輪播圖主體 -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="d-block w-100 h-100 rounded-bottom" src="https://cdn.pixabay.com/photo/2014/02/04/18/08/cafe-gourmande-258201_960_720.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img class="d-block w-100 h-100 rounded-bottom" src="https://cdn.pixabay.com/photo/2020/10/07/12/33/cafe-5635013_960_720.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img class="d-block w-100 h-100 rounded-bottom" src="https://cdn.pixabay.com/photo/2014/07/31/22/02/restaurant-406972_960_720.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img class="d-block w-100 h-100 rounded-bottom" src="https://cdn.pixabay.com/photo/2020/02/21/18/53/cappuccino-4868392_960_720.jpg">
+          </div>
+        </div>
+        <!-- 輪播圖的分頁指示器 -->
+        <div class="swiper-pagination d-flex justify-content-end pe-5 pb-3"></div>
+      </div>
+      <!-- 標題文字 -->
+      <div class="text position-absolute top-50 start-50 translate-middle d-flex flex-column align-items-center w-new p-4">
+        <p class="fs-1 fs-sm-new1 fs-md-new1 fs-xl-new1 text-light">Welcome to</p>
+        <p class="fs-2 fs-sm-new2 fs-md-new2 fs-xl-new2 text-light">Coffee shop</p>
+        <!-- 邊框素材 -->
+        <img class="position-absolute top-0 w-100" src="./images/border1.png">
+        <img class="position-absolute bottom-0 w-100" src="./images/border2.png">
+      </div>
+    </div>
+  </div>
+
+  <!-- 經典介紹 -->
+  <div id="introduce">
+    <div class="container">
+      <h1 class="text-center mb-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">signature dishes</h1>
+      <div class="row gap-5 gap-lg-0">
+        <div class="col-12 col-lg-4" data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">
+          <div class="card border border-3">
+            <img src="https://cdn.pixabay.com/photo/2020/12/06/13/06/coffee-5808719_960_720.jpg">
+            <div class="card-body">
+              <h1 class="card-title fw-bolder m-0 ps-3">精品咖啡</h1>
+              <a href="./menu.html#coffee" class="btn position-absolute start-50 translate-middle fw-bolder px-4 py-2">了解更多</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300" data-aos-once="true">
+          <div class="card border border-3">
+            <img src="https://cdn.pixabay.com/photo/2015/04/20/21/05/breakfast-732231_1280.jpg">
+            <div class="card-body">
+              <h1 class="card-title fw-bolder m-0 ps-3">精選輕食</h1>
+              <a href="./menu.html#food" class="btn position-absolute start-50 translate-middle fw-bolder px-4 py-2">了解更多</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="600" data-aos-once="true">
+          <div class="card border border-3">
+            <img src="https://cdn.pixabay.com/photo/2017/05/30/12/20/matcha-2356768_640.jpg">
+            <div class="card-body">
+              <h1 class="card-title fw-bolder m-0 ps-3">嚴選茶飲</h1>
+              <a href="./menu.html#drink" class="btn position-absolute start-50 translate-middle fw-bolder px-4 py-2">了解更多</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 關於我們 -->
+  <div id="about">
+    <div class="container pb-5">
+      <h1 class="text-white text-center mb-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" data-aos-offset="0" data-aos-once="true">about us</h1>
+      <div class="row gap-3 gap-lg-0">
+        <div class="col-12 col-lg-6 bg-light px-0 pb-5 position-relative overflow-hidden rounded-3 shadow-lg" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-offset="0" data-aos-once="true">
+          <img class="d-block w-100 h-100" src="./images/about.png">
+          <p class="text-about1 position-absolute bottom-0 end-0 fs-2 px-3"><img src="./images/cup-of-drink.png" width="40" class="pb-2 me-2">coffee shop</p>
+        </div>
+        <div class="col-12 col-lg-6 d-flex align-items-center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" data-aos-offset="0" data-aos-once="true">
+          <p class="text-about2 text-white p-3 fs-5 fw-bolder lh-base">
+            堅持手工烘豆、細細翻動、控制火侯，尋找甜蜜點讓咖啡豆完美釋放風味，守護讓所有咖啡愛好者喝杯好咖啡的信念，堅定對精品咖啡文化的熱情，開啟精品咖啡連鎖品牌的世界藍圖。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 在螢幕底部的 #footer2 -->
+  <div id="footer2" class="mt-1 py-4 d-xl-none">
+    <div class="container">
+      <div class="row flex-column flex-md-row">
+        <div class="col fs-1 d-flex justify-content-center align-items-center">
+          <a href="#" class="me-4"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="me-4"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="me-4"><i class="bi bi-line"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+        <div class="col mt-4 d-flex justify-content-center align-items-center fw-bolder">
+          <p>
+            &copy; 2022 by Jun<br>
+            <span style="font-size: 14px;">此為切版練習，圖片為原網站所有</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#" class="tophome fixed-bottom mx-4 my-2"><i class="bi bi-arrow-up-circle-fill fs-1"></i></a>
+  
+  <!-- bootstrap js 程式 -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <!-- 設定 swiper js -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- AOS 的主程式 js -->
+  <script src="./js/aos.js"></script>
+  <script>
+    // 啟用 Swiper
+    const swiperBg = new Swiper('#swiper-bg', {
+      loop: true, // 無限循環
+      parallax: true,
+      autoplay: {
+        delay: 4000 // 自動播放，設定幾毫秒播放下一張
+      },
+
+      simulateTouch: false, // 是否可以拖曳
+
+      // 啟動分頁指示器功能
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+    });
+
+    // 啟動 AOS
+    AOS.init()
+  </script>
+</body>
+</html>

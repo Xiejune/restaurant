@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- AOS 的 css -->
+  <link rel="stylesheet" href="./css/aos.css">
+  <!-- bootstrap css 程式 -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="./icons/bootstrap-icons.css">
+  <!-- google font 字型 -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+  <!-- 自訂樣式 -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>news</title>
+</head>
+<body>
+  <!-- 導覽列: 手機/平板尺寸: 清單折疊起來, pc 尺寸: 清單展開 -->
+  <!-- 導覽列 -->
+  <nav id="nav" class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
+    <!-- 容器 -->
+    <div class="container-fluid d-xl-flex flex-xl-column justify-content-xl-center">
+      <!-- logo 品牌 -->
+      <a class="navbar-brand fs-1 flex-xl-grow-1 d-xl-flex align-items-xl-end" href="./index.html"><img src="./images/cup-of-drink.png" width="40" class="pb-2 me-2">Coffee shop</a>
+      <!-- 漢堡按鈕 -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 內容 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+      <div class="offcanvas offcanvas-start flex-column" id="navbarMenu">
+        <!-- 關閉按鈕 -->
+        <button type="button" class="btn-close text-reset ms-auto d-xl-none" data-bs-dismiss="offcanvas"></button>
+        <ul class="navbar-nav my-5 d-flex flex-column">
+          <li class="nav-item">
+            <a class="nav-link ps-3" href="./index.html">HOME</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link ps-3" href="./news.html">NEWS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ps-3" href="./menu.html">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ps-3" href="./conect.html">CONTACT US</a>
+          </li>
+        </ul>
+        <div id="footer1" class="d-none d-xl-block mt-5 flex-grow-1">
+          <div class="row flex-column">
+            <div class="col fs-2">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-line"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+            <div class="col mt-4 fw-bolder">
+              <p>
+                &copy; 2022 by Jun<br>
+                <span style="font-size: 14px;">此為切版練習，圖片為原網站所有</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 封頁 -->
+  <div id="bg-all">
+    <div class="container-fluid position-relative">
+      <img src="./images/news.png" class="d-block w-100">
+      <!-- 麵包屑 -->
+      <nav class="position-absolute start-50 top-50 translate-middle fs-1">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html" class="link-light">Home</a></li>
+          <li class="breadcrumb-item text-light">news</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <div id="content-news" class="d-flex flex-column gap-xxl-5">
+    <h1 class="text-center text-white" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">最新消息</h1>
+    <div class="container d-flex justify-content-center" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" data-aos-offset="0" data-aos-once="true">
+      <div class="card card-content1 mb-5 w-85 h-100">
+        <div class="row g-0 h-100">
+          <div class="col-xxl-6">
+            <!-- 圖片 -->
+            <img src="" class="w-100 h-100 new-img">
+          </div>
+          <div class="col-xxl-6">
+            <div class="card-body">
+              <!-- 日期 -->
+              <p class="card-text"><small class="text-muted"></small></p>
+              <!-- 標題 -->
+              <h5 class="card-title fw-bolder fs-4"></h5>
+              <p class="card-text card-textContent"></p>
+              <div class="card card-content2 text-center">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link fw-bolder text-coffee others1 other1 active">其他 1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bolder text-coffee others1 other2">其他 2</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bolder"></h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000" data-aos-offset="0" data-aos-once="true">
+      <div class="card card-content1 mb-5 w-85 h-100">
+        <div class="row g-0 h-100">
+          <div class="col-xxl-6">
+            <!-- 圖片 -->
+            <img src="" class="w-100 h-100 new-img">
+          </div>
+          <div class="col-xxl-6">
+            <div class="card-body">
+              <!-- 日期 -->
+              <p class="card-text"><small class="text-muted"></small></p>
+              <!-- 標題 -->
+              <h5 class="card-title fw-bolder fs-4"></h5>
+              <p class="card-text card-textContent"></p>
+              <div class="card card-content2 text-center">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link fw-bolder text-coffee others0 other1 active">其他 1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bolder text-coffee others0 other2">其他 2</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bolder"></h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav id="pagina">
+    <ul class="pagination justify-content-center">
+      <li class="page-item active"><a class="page-link text-coffee" href="#">1</a></li>
+      <li class="page-item"><a class="page-link text-coffee" href="#">2</a></li>
+    </ul>
+  </nav>
+
+  <div id="footer2" class="mt-1 py-4 d-xl-none">
+    <div class="container">
+      <div class="row flex-column flex-md-row">
+        <div class="col fs-1 d-flex justify-content-center align-items-center">
+          <a href="#" class="me-4"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="me-4"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="me-4"><i class="bi bi-line"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+        <div class="col mt-4 d-flex justify-content-center align-items-center fw-bolder">
+          <p>
+            &copy; 2022 by Jun<br>
+            <span style="font-size: 14px;">此為切版練習，圖片為原網站所有</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 回頂端列 -->
+  <a href="#" class="tophome fixed-bottom mx-4 my-2"><i class="bi bi-arrow-up-circle-fill fs-1"></i></a>
+  
+  <!-- bootstrap js 程式 -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <!-- AOS 的主程式 js -->
+  <script src="./js/aos.js"></script>
+  <script src="./js/text.js"></script>
+  <script>
+    const img_card1 = document.querySelectorAll('#content-news .card-content1 .new-img')
+    const day_card1 = document.querySelectorAll('#content-news .card-content1 .text-muted')
+    const title_card1 = document.querySelectorAll('#content-news .card-content1 .card-title')
+    const text_card1 = document.querySelectorAll('#content-news .card-content1 .card-textContent')
+    const title_card2 = document.querySelectorAll('#content-news .card-content2 .card-title')
+    const text_card2 = document.querySelectorAll('#content-news .card-content2 .card-text')
+    const other1 = document.querySelectorAll('#content-news .card-content2 .other1')
+    const other2 = document.querySelectorAll('#content-news .card-content2 .other2')
+    const others1 = document.getElementsByClassName('others1')
+    const others0 = document.getElementsByClassName('others0')
+    const card2_nav = document.querySelectorAll('#content-news .card-content2 .nav')
+    const filtered1 = news.filter(value => {
+      return value.group() == 0
+    })
+    console.log(filtered1)
+    const filtered2 = news.filter(value => {
+      return value.group() == 1
+    })
+    console.log(filtered2)
+
+    function card (filtered) {
+      for (let i=0; i<=1; i++) {
+        img_card1[i].src = `${filtered[i].img}`
+        day_card1[i].innerText = `${filtered[i].day}`
+        title_card1[i].innerText = `${filtered[i].title}`
+        text_card1[i].innerText = `${filtered[i].content}`
+        title_card2[i].innerHTML = `${filtered[i].other1_title}`
+        text_card2[i].innerHTML = `${filtered[i].other1_content}`
+        if (filtered[i].id === 2) {
+          card2_nav[i].insertAdjacentHTML('beforeend', `
+            <li class="nav-item">
+              <a class="nav-link fw-bolder text-coffee others${(filtered[i].id+1) % 2} other3">其他 3</a>
+            </li>
+          `)
+          const other3 = document.querySelector('#content-news .card-content2 .other3')
+          other3.onclick = () => {
+            if (i == 0) {
+              for (const other of others1) {
+                other.classList.remove('active')
+              }
+            } else if (i == 1) {
+              for (const other of others0) {
+                other.classList.remove('active')
+              }
+            }
+            
+            other3.classList.add('active')
+            title_card2[i].innerHTML = `${filtered[i].other3_title}`
+            text_card2[i].innerHTML = `${filtered[i].other3_content}`
+          }
+        }
+        other1[i].onclick = () => {
+          if (i == 0) {
+            for (const other of others1) {
+              other.classList.remove('active')
+            }
+          } else if (i == 1) {
+            for (const other of others0) {
+              other.classList.remove('active')
+            }
+          }
+
+          other1[i].classList.add('active')
+          title_card2[i].innerHTML = `${filtered[i].other1_title}`
+          text_card2[i].innerHTML = `${filtered[i].other1_content}`
+        }
+
+        other2[i].onclick = () => {
+          if (i == 0) {
+            for (const other of others1) {
+              other.classList.remove('active')
+            }
+          } else if (i == 1) {
+            for (const other of others0) {
+              other.classList.remove('active')
+            }
+          }
+
+          other2[i].classList.add('active')
+          title_card2[i].innerHTML = `${filtered[i].other2_title}`
+          text_card2[i].innerHTML = `${filtered[i].other2_content}`
+        }
+      }
+      
+    }
+    card(filtered1)
+
+    const paginaLink = document.querySelectorAll('#pagina .page-item')
+    for (const i in paginaLink) {
+      paginaLink[i].onclick = () => {
+        for (const other of others1) {
+          if (other.className.includes('other3')) {
+            other.parentElement.remove()
+          }
+        }
+        for (const other of others0) {
+          if (other.className.includes('other3')) {
+            other.parentElement.remove()
+          }
+        }
+
+        // 直接按數字
+        if (i == 0) {
+          card(filtered1)
+          for (const link of paginaLink) {
+            link.classList.remove('active')
+          }
+          paginaLink[i].classList.add('active')
+        } else if (i ==1) {
+          card(filtered2)
+          for (const link of paginaLink) {
+            link.classList.remove('active')
+          }
+          paginaLink[i].classList.add('active')
+        }
+      }
+    }
+
+    // 啟動 AOS
+    AOS.init()
+  </script>
+</body>
+</html>
